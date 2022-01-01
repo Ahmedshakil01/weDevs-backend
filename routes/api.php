@@ -18,6 +18,9 @@ Route::prefix('v1')->group(function () {
      Route::post('login', 'AuthController@login');
      Route::post('register', 'AuthController@register');
 
+      route::apiResource('product', 'ProductController')->except('update');
+      
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });

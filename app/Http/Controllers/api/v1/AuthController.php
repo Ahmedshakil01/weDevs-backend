@@ -3,13 +3,13 @@
 namespace App\Http\Controllers\api\v1;
 
 use App\Http\Controllers\Controller;
-use App\Http\Request\UserLoginRequest;
-use App\Http\Request\UserRegistrationRequest;
+use App\Http\Requests\UserLoginRequest;
+use App\Http\Requests\UserRegistrationRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Traits\ApiResponser;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Log;
+
 
 class AuthController extends Controller
 {
