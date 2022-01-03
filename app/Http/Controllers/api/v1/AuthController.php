@@ -46,6 +46,21 @@ class AuthController extends Controller
         }
     }
 
+    public function logout()
+    {
+        $result=auth()->user()->currentAccessToken()->delete();
+        if($result){
+            return $this->success('logout', 'User logout successfully.');
+        }else{
+            return $this->error('Logout Failed');
+        }
+    }
+    public function readNotification()
+    {
+        Auth::user()->unreadNotifications->markAsRead();
+        return $this->success('Notification', 'Mark Read At Notification successfully.');
+    }
+
 
 
 }

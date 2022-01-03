@@ -1,0 +1,1138 @@
+{
+	"info": {
+		"_postman_id": "664ee5ca-c6f5-4ae9-9ec0-0d9c01f0f34c",
+		"name": "weDevs-Exam-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/v1/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "name",
+						"value": "test",
+						"type": "text"
+					},
+					{
+						"key": "discription",
+						"value": "testtttttt",
+						"type": "text"
+					},
+					{
+						"key": "price",
+						"value": "500",
+						"type": "text"
+					},
+					{
+						"key": "quantity",
+						"value": "2",
+						"type": "text"
+					},
+					{
+						"key": "is_favourite",
+						"value": "true",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Shakil",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "sshakil.khannsu12@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "ssww1234",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "ssww1234",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"register"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "shakil@aleshatech.com.bd",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Registration API"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/v1/register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "name",
+								"value": "test",
+								"type": "text"
+							},
+							{
+								"key": "discription",
+								"value": "testtttttt",
+								"type": "text"
+							},
+							{
+								"key": "price",
+								"value": "500",
+								"type": "text"
+							},
+							{
+								"key": "quantity",
+								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "is_favourite",
+								"value": "true",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Shakil",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "sshakil.khannsu12@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "ssww1234",
+									"type": "text"
+								},
+								{
+									"key": "c_password",
+									"value": "ssww1234",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"register"
+							],
+							"query": [
+								{
+									"key": null,
+									"value": "shakil@aleshatech.com.bd",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Jan 2022 16:47:27 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Jan 2022 16:47:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": \"User register successfully.\",\n    \"data\": {\n        \"token\": \"2|UzRLOqV3LFoZKjvMAbchjwdfWKx8UuX3siMx0KBa\",\n        \"name\": \"Shakil\"\n    }\n}"
+				},
+				{
+					"name": "http://127.0.0.1:8000/api/v1/register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "name",
+								"value": "test",
+								"type": "text"
+							},
+							{
+								"key": "discription",
+								"value": "testtttttt",
+								"type": "text"
+							},
+							{
+								"key": "price",
+								"value": "500",
+								"type": "text"
+							},
+							{
+								"key": "quantity",
+								"value": "2",
+								"type": "text"
+							},
+							{
+								"key": "is_favourite",
+								"value": "true",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Shakil",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "sshakil.khannsu12@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "ssww1234",
+									"type": "text"
+								},
+								{
+									"key": "c_password",
+									"value": "ssww1234",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"register"
+							],
+							"query": [
+								{
+									"key": null,
+									"value": "shakil@aleshatech.com.bd",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Jan 2022 16:47:27 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 02 Jan 2022 16:47:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": \"User register successfully.\",\n    \"data\": {\n        \"token\": \"2|UzRLOqV3LFoZKjvMAbchjwdfWKx8UuX3siMx0KBa\",\n        \"name\": \"Shakil\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/v1/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "sshakil.khannsu234@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "qwertyui",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				},
+				"description": "login api"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/v1/login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "sshakil.khannsu234@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "qwertyui",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jan 2022 06:25:51 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jan 2022 06:25:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": \"User login Successful.\",\n    \"data\": {\n        \"token\": \"7|b0iGloF0x97fbeihkCU2E9PdfrMJr1zb8kBo5T6E\",\n        \"name\": \"Shakil\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/v1/product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/product",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"product"
+					]
+				},
+				"description": "Product List"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/v1/product",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/product",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"product"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jan 2022 06:27:35 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jan 2022 06:27:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": \"All Product List\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Ruthie\",\n            \"description\": \"Occaecati accusantium dolor minus et reprehenderit molestiae fugit. Ipsum autem eos facere veritatis blanditiis architecto est est. Reiciendis possimus consequatur esse totam eligendi qui velit.\",\n            \"price\": \"1739.00\",\n            \"quantity\": 881,\n            \"image\": \"https://via.placeholder.com/500x500.png/0066dd?text=1+autem\",\n            \"created_at\": \"2021-12-29T14:39:07.000000Z\",\n            \"updated_at\": \"2021-12-29T14:39:07.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Cullen\",\n            \"description\": \"Earum assumenda laudantium maxime ea nulla cum. Sint ea inventore et repellendus praesentium et. Voluptas animi consequatur consequatur fugiat non.\",\n            \"price\": \"3346.00\",\n            \"quantity\": 1799,\n            \"image\": \"https://via.placeholder.com/500x500.png/001100?text=1+exercitationem\",\n            \"created_at\": \"2021-12-29T14:39:07.000000Z\",\n            \"updated_at\": \"2021-12-29T14:39:07.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Kaitlyn\",\n            \"description\": \"Vero totam libero sunt harum omnis. Velit suscipit quam tempore vel dolores. Aut et excepturi commodi omnis est rerum. Et sed consequuntur saepe ducimus qui ex est.\",\n            \"price\": \"1572.00\",\n            \"quantity\": 1657,\n            \"image\": \"https://via.placeholder.com/500x500.png/00ff00?text=1+error\",\n            \"created_at\": \"2021-12-29T14:39:07.000000Z\",\n            \"updated_at\": \"2021-12-29T14:39:07.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Laurie\",\n            \"description\": \"Accusamus sequi aut ut ut. Perferendis et nostrum at aut sint et dolor. Enim voluptas suscipit perspiciatis doloribus tenetur commodi.\",\n            \"price\": \"2493.00\",\n            \"quantity\": 1503,\n            \"image\": \"https://via.placeholder.com/500x500.png/0099bb?text=1+molestiae\",\n            \"created_at\": \"2021-12-29T14:39:07.000000Z\",\n            \"updated_at\": \"2021-12-29T14:39:07.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Frederick\",\n            \"description\": \"Et et fugit excepturi est nulla laudantium. Ut quas unde accusamus. Sunt aut nemo quo dolorem.\",\n            \"price\": \"1891.00\",\n            \"quantity\": 92,\n            \"image\": \"https://via.placeholder.com/500x500.png/002211?text=1+natus\",\n            \"created_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"updated_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Florine\",\n            \"description\": \"Sed voluptatibus suscipit facilis est sint amet omnis. Vel quod doloribus pariatur in. Reiciendis quas magni ut et deserunt.\",\n            \"price\": \"1894.00\",\n            \"quantity\": 1369,\n            \"image\": \"https://via.placeholder.com/500x500.png/000011?text=1+beatae\",\n            \"created_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"updated_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Art\",\n            \"description\": \"Ut pariatur harum magni autem quia voluptate non sint. Ullam iusto impedit non vero iure aut quibusdam dolorem. Enim consequatur vero sit dolorem. Iusto nemo commodi officia laborum voluptates natus.\",\n            \"price\": \"1232.00\",\n            \"quantity\": 1587,\n            \"image\": \"https://via.placeholder.com/500x500.png/006633?text=1+explicabo\",\n            \"created_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"updated_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 9,\n            \"name\": \"Meda\",\n            \"description\": \"Qui sunt et distinctio dolorem minima odit provident. Vitae quo ducimus earum aut sed. Eveniet ad tempore eum ad molestiae dignissimos. Perspiciatis vero pariatur est consectetur et delectus aut.\",\n            \"price\": \"3095.00\",\n            \"quantity\": 1342,\n            \"image\": \"https://via.placeholder.com/500x500.png/00dd99?text=1+iste\",\n            \"created_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"updated_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Melba\",\n            \"description\": \"Ea et atque deserunt doloribus est. Nihil et numquam ab suscipit ut vitae. Magni quae totam sed nobis ratione voluptas quidem. Illum non adipisci omnis dicta. Dolorum quis vitae molestiae.\",\n            \"price\": \"3776.00\",\n            \"quantity\": 1021,\n            \"image\": \"https://via.placeholder.com/500x500.png/00dddd?text=1+sed\",\n            \"created_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"updated_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Rafaela\",\n            \"description\": \"Omnis consequatur quidem recusandae fugiat quisquam. Asperiores similique non necessitatibus. Et nihil similique inventore et est nostrum reprehenderit.\",\n            \"price\": \"2464.00\",\n            \"quantity\": 1265,\n            \"image\": \"https://via.placeholder.com/500x500.png/007766?text=1+quo\",\n            \"created_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"updated_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Darrick\",\n            \"description\": \"Beatae consequatur molestias quis commodi deserunt aut. Possimus dicta ullam vero. Perferendis sequi reiciendis temporibus recusandae.\",\n            \"price\": \"580.00\",\n            \"quantity\": 688,\n            \"image\": \"https://via.placeholder.com/500x500.png/0011ff?text=1+rem\",\n            \"created_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"updated_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 13,\n            \"name\": \"Kelton\",\n            \"description\": \"Harum quos modi quis et ex. Reiciendis consequatur et cumque ad beatae nobis. Hic ab qui repudiandae.\",\n            \"price\": \"3170.00\",\n            \"quantity\": 1047,\n            \"image\": \"https://via.placeholder.com/500x500.png/00ee55?text=1+aut\",\n            \"created_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"updated_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 14,\n            \"name\": \"Claudine\",\n            \"description\": \"Veritatis fugit distinctio dolores quia. Quibusdam voluptates ullam consequatur dicta. Beatae harum est ipsam. Recusandae in sit assumenda qui voluptas et provident.\",\n            \"price\": \"1120.00\",\n            \"quantity\": 1927,\n            \"image\": \"https://via.placeholder.com/500x500.png/0044bb?text=1+exercitationem\",\n            \"created_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"updated_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 15,\n            \"name\": \"Nikko\",\n            \"description\": \"Assumenda ex a dolor. Ut eum vel voluptatum dignissimos. Est dolore et eius nulla.\",\n            \"price\": \"2623.00\",\n            \"quantity\": 1807,\n            \"image\": \"https://via.placeholder.com/500x500.png/00bb55?text=1+rem\",\n            \"created_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"updated_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 16,\n            \"name\": \"Garnett\",\n            \"description\": \"Omnis qui necessitatibus ex eligendi ea. Impedit deleniti quia vel repudiandae id quam. Commodi corporis enim aspernatur dolorem exercitationem aspernatur.\",\n            \"price\": \"823.00\",\n            \"quantity\": 120,\n            \"image\": \"https://via.placeholder.com/500x500.png/003388?text=1+sit\",\n            \"created_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"updated_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 17,\n            \"name\": \"Brielle\",\n            \"description\": \"Quia suscipit quasi odio. Quos qui cumque similique reprehenderit maxime. Et et ea dolore error possimus sit. Voluptatum suscipit aspernatur quo placeat ratione dolores dicta.\",\n            \"price\": \"2093.00\",\n            \"quantity\": 1211,\n            \"image\": \"https://via.placeholder.com/500x500.png/003322?text=1+est\",\n            \"created_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"updated_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 18,\n            \"name\": \"Izaiah\",\n            \"description\": \"Consequatur consequuntur doloremque est assumenda laudantium nisi voluptate voluptate. Laudantium inventore itaque expedita quia. Blanditiis animi cumque omnis quis.\",\n            \"price\": \"1950.00\",\n            \"quantity\": 231,\n            \"image\": \"https://via.placeholder.com/500x500.png/007777?text=1+qui\",\n            \"created_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"updated_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 19,\n            \"name\": \"Krystel\",\n            \"description\": \"Repellendus voluptatibus rerum quisquam libero rerum quis. Ratione dolor perspiciatis iure qui deleniti vel quisquam. Vel nesciunt ea sit cum. Optio libero qui debitis molestiae odio voluptatibus.\",\n            \"price\": \"1523.00\",\n            \"quantity\": 762,\n            \"image\": \"https://via.placeholder.com/500x500.png/0077ff?text=1+quisquam\",\n            \"created_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"updated_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 20,\n            \"name\": \"Willie\",\n            \"description\": \"Omnis quos qui iste sed debitis. Voluptas accusantium dignissimos natus vel. Qui ipsam aperiam optio aut. Magni nesciunt enim et itaque architecto at. Voluptas quia maxime debitis maiores.\",\n            \"price\": \"1146.00\",\n            \"quantity\": 323,\n            \"image\": \"https://via.placeholder.com/500x500.png/0033ee?text=1+quas\",\n            \"created_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"updated_at\": \"2021-12-29T14:39:08.000000Z\",\n            \"deleted_at\": null\n        },\n        {\n            \"id\": 21,\n            \"name\": \"test\",\n            \"description\": \"tttttttttttt\",\n            \"price\": \"500.00\",\n            \"quantity\": 3,\n            \"image\": null,\n            \"created_at\": \"2022-01-02T09:42:30.000000Z\",\n            \"updated_at\": \"2022-01-02T09:42:30.000000Z\",\n            \"deleted_at\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/v1/product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Test Product",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1200",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "https://via.placeholder.com/500x500.png/0066dd?tex...",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/product",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"product"
+					]
+				},
+				"description": "Product created"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/v1/product",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Test",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Test Product",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1200",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "https://via.placeholder.com/500x500.png/0066dd?tex...",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/product",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"product"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jan 2022 06:34:17 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jan 2022 06:34:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": \"Product Created Successfully\",\n    \"data\": {\n        \"product\": {\n            \"name\": \"Test\",\n            \"description\": \"Test Product\",\n            \"price\": \"1200\",\n            \"quantity\": \"5\",\n            \"image\": \"https://via.placeholder.com/500x500.png/0066dd?tex...\",\n            \"updated_at\": \"2022-01-03T06:34:17.000000Z\",\n            \"created_at\": \"2022-01-03T06:34:17.000000Z\",\n            \"id\": 23\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/v1/product/update/23",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "7|b0iGloF0x97fbeihkCU2E9PdfrMJr1zb8kBo5T6E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Test2",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Test2 product",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1000",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/product/update/23",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						"update",
+						"23"
+					]
+				},
+				"description": "Product update"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/v1/product/update/23",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Test2",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Test2 product",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/product/update/23",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"update",
+								"23"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jan 2022 06:49:59 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jan 2022 06:49:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": \"Product Updated Successfully\",\n    \"data\": {\n        \"product\": true\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/v1/product/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/product/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"product",
+						"1"
+					]
+				},
+				"description": "Product Delete API"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/v1/product/1",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/product/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jan 2022 06:56:19 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jan 2022 06:56:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": \"Product Deleted Successfully\",\n    \"data\": \"Deleted\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/v1/order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/order",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order"
+					]
+				},
+				"description": "Order List API"
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/v1/order",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/order",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"order"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jan 2022 09:03:25 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 03 Jan 2022 09:03:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": \"All Order List\",\n    \"data\": {\n        \"order\": []\n    }\n}"
+				}
+			]
+		}
+	]
+}
